@@ -4,53 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LumiTranslate</title>
-    <meta name="description" content="LumiTranslate — быстрый онлайн-переводчик с озвучиванием и распознаванием речи.">
-    <meta name="robots" content="index, follow, max-image-preview:large">
-    <meta name="theme-color" content="#6892ec">
-    <meta name="author" content="LumiTranslate">
-    <link rel="canonical" href="https://classic-web2026.github.io/LumiTranslate/">
-    <link rel="icon" type="image/png" sizes="512x512" href="NORMAL_favicon_512.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="NORMAL_favicon_512.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="NORMAL_app_512.png">
-    <link rel="apple-touch-icon" sizes="512x512" href="NORMAL_favicon_512.png">
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="LumiTranslate">
-    <meta property="og:locale" content="ru_RU">
-    <meta property="og:url" content="https://classic-web2026.github.io/LumiTranslate/">
-    <meta property="og:title" content="LumiTranslate">
-    <meta property="og:description" content="Быстрый онлайн-переводчик с озвучиванием и распознаванием речи.">
-    <meta property="og:image" content="https://classic-web2026.github.io/LumiTranslate/NORMAL_favicon_512.png">
-    <meta property="og:image:secure_url"
-        content="https://classic-web2026.github.io/LumiTranslate/NORMAL_favicon_512.png">
-    <meta property="og:image:width" content="512">
-    <meta property="og:image:height" content="512">
-    <meta property="og:image:type" content="image/png">
-    <meta property="og:image:alt" content="LumiTranslate">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://classic-web2026.github.io/LumiTranslate/">
-    <meta name="twitter:title" content="LumiTranslate">
-    <meta name="twitter:description" content="Быстрый онлайн-переводчик с озвучиванием и распознаванием речи.">
-    <meta name="twitter:image" content="https://classic-web2026.github.io/LumiTranslate/NORMAL_favicon_512.png">
+    <meta name="description"
+        content="LumiTranslate — переводчик с выбором более 50 языков, озвучиванием текста и распознаванием речи.">
+    <meta name="theme-color" content="#FFFFFF">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "WebApplication",
-      "name": "LumiTranslate",
-      "url": "https://classic-web2026.github.io/LumiTranslate/",
-      "description": "Быстрый онлайн-переводчик с озвучиванием и распознаванием речи.",
-      "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "All",
-      "inLanguage": ["ru","en","kk","de","fr","es","tr","uk","zh","ja","ko","ar"],
-      "image": "https://classic-web2026.github.io/LumiTranslate/NORMAL_favicon_512.png",
-      "logo": "https://classic-web2026.github.io/LumiTranslate/NORMAL_logo.png",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"}
-    }
-    </script>
+    <link rel="icon" type="image/png" href="../Logo/NORMAL_favicon_512.png">
+    <link rel="apple-touch-icon" href="../Logo/NORMAL_favicon_512.png">
+    <title>LumiTranslate</title>
 </head>
 
 <body>
@@ -71,83 +34,101 @@
         </symbol>
     </svg>
     <header class="up">
-        <img src="NORMAL_favicon_512.png" alt="LumiTranslate" class="img" width="48" height="48">
+        <img src="../Logo/NORMAL_favicon_512.png" alt="Логотип LumiTranslate" class="img">
         <div class="brand-text">
             <h1 class="h1">LumiTranslate</h1>
-            <p class="subtitle">Переводчик</p>
+            <p class="subtitle">Переводчик, поддерживающий более 50 языков, с озвучиванием и распознаванием речи.</p>
         </div>
-        <button class="theme-button" id="theme-button" type="button" aria-label="Тема">
+        <button class="theme-button" id="theme-button" type="button" aria-label="Включить тёмную тему">
             <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true">
                 <use id="theme-icon-use" href="#i-moon"></use>
             </svg>
         </button>
     </header>
+
     <main class="main">
         <section class="translator" aria-label="Переводчик">
             <div class="language-bar">
                 <button class="language-choice" id="from-language" type="button" data-side="from" data-language="en"
-                    aria-haspopup="dialog" aria-expanded="false"><span class="language-name">English</span><span
-                        class="language-chevron" aria-hidden="true"><svg viewBox="0 0 24 24">
+                    aria-haspopup="dialog" aria-expanded="false" aria-label="Выбрать язык исходного текста">
+                    <span class="language-name">English</span>
+                    <span class="language-chevron" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
                             <path d="m7 10 5 5 5-5"></path>
-                        </svg></span></button>
-                <button class="swap-button" id="swap-button" type="button" aria-label="Поменять"><svg
-                        viewBox="0 0 24 24" aria-hidden="true">
+                        </svg>
+                    </span>
+                </button>
+
+                <button class="swap-button" id="swap-button" type="button" aria-label="Поменять языки местами">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
                         <path class="arrow-blue" d="M7 3v14m0 0-4-4m4 4 4-4"></path>
                         <path class="arrow-light" d="M17 21V7m0 0-4 4m4-4 4 4"></path>
-                    </svg></button>
+                    </svg>
+                </button>
+
                 <button class="language-choice" id="to-language" type="button" data-side="to" data-language="ru"
-                    aria-haspopup="dialog" aria-expanded="false"><span class="language-name">Русский</span><span
-                        class="language-chevron" aria-hidden="true"><svg viewBox="0 0 24 24">
+                    aria-haspopup="dialog" aria-expanded="false" aria-label="Выбрать язык перевода">
+                    <span class="language-name">Русский</span>
+                    <span class="language-chevron" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
                             <path d="m7 10 5 5 5-5"></path>
-                        </svg></span></button>
+                        </svg>
+                    </span>
+                </button>
             </div>
+
             <div class="text-panels">
                 <section class="text-panel">
-                    <label class="sr-only" for="source-text">Текст</label>
+                    <label class="sr-only" for="source-text">Текст для перевода</label>
+                    <!-- Поменяй текст здесь, чтобы изменить стартовое приветствие. -->
                     <textarea id="source-text" maxlength="5000"
                         placeholder="Введите текст">Welcome to LumiTranslate</textarea>
                     <div class="panel-footer">
                         <div class="panel-actions">
-                            <button class="icon-button" id="listen-source" type="button" aria-label="Микрофон"><svg
-                                    viewBox="0 0 24 24" aria-hidden="true">
+                            <button class="icon-button" id="listen-source" type="button"
+                                aria-label="Прослушать исходный текст">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M12 2a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path>
                                     <path d="M19 10v1a7 7 0 0 1-14 0v-1m7 8v4m-4 0h8"></path>
-                                </svg></button>
-                            <button class="icon-button" id="speak-source" type="button" aria-label="Озвучить"><svg
-                                    viewBox="0 0 24 24" aria-hidden="true">
+                                </svg>
+                            </button>
+                            <button class="icon-button" id="speak-source" type="button"
+                                aria-label="Озвучить исходный текст">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
                                     <path d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"></path>
-                                </svg></button>
-                            <button class="icon-button" id="copy-source" type="button" aria-label="Копировать"><svg
-                                    viewBox="0 0 24 24" aria-hidden="true">
+                                </svg>
+                            </button>
+                            <button class="icon-button" id="copy-source" type="button"
+                                aria-label="Скопировать исходный текст">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
                                     <rect x="8" y="8" width="13" height="13" rx="2"></rect>
                                     <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path>
-                                </svg></button>
+                                </svg>
+                            </button>
                         </div>
                         <span class="character-count" id="character-count">24 / 5000</span>
                     </div>
                 </section>
-                <section class="text-panel result-panel" id="result-panel">
+
+                <section class="text-panel result-panel">
                     <label class="sr-only" for="translated-text">Перевод</label>
-                    <div class="skeleton" id="skeleton" aria-hidden="true">
-                        <div class="skeleton-line" style="width: 92%"></div>
-                        <div class="skeleton-line" style="width: 84%"></div>
-                        <div class="skeleton-line" style="width: 68%"></div>
-                    </div>
                     <textarea id="translated-text" readonly placeholder="Перевод появится здесь"
                         aria-live="polite">Добро пожаловать в LumiTranslate</textarea>
                     <div class="panel-footer">
                         <div class="panel-actions">
-                            <button class="icon-button" id="speak-result" type="button"
-                                aria-label="Озвучить перевод"><svg viewBox="0 0 24 24" aria-hidden="true">
+                            <button class="icon-button" id="speak-result" type="button" aria-label="Озвучить перевод">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
                                     <path d="M11 5 6 9H3v6h3l5 4V5Z"></path>
                                     <path d="M15.5 8.5a5 5 0 0 1 0 7m3-10a9 9 0 0 1 0 13"></path>
-                                </svg></button>
-                            <button class="icon-button" id="copy-result" type="button" aria-label="Копировать"><svg
-                                    viewBox="0 0 24 24" aria-hidden="true">
+                                </svg>
+                            </button>
+                            <button class="icon-button" id="copy-result" type="button" aria-label="Скопировать перевод">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
                                     <rect x="8" y="8" width="13" height="13" rx="2"></rect>
                                     <path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"></path>
-                                </svg></button>
+                                </svg>
+                            </button>
                         </div>
                         <span class="language-badge" id="result-language">RU</span>
                     </div>
@@ -156,37 +137,50 @@
             <p class="message" id="message" role="status" aria-live="polite"></p>
         </section>
     </main>
+
     <div class="language-modal" id="language-modal" hidden>
-        <button class="language-shade" type="button" aria-label="Закрыть"></button>
+        <button class="language-shade" type="button" aria-label="Закрыть выбор языка"></button>
         <section class="language-window" role="dialog" aria-modal="true" aria-labelledby="language-title">
             <div class="language-title-row">
                 <div>
                     <p class="language-overline">LumiTranslate</p>
                     <h2 id="language-title">Выбери язык</h2>
-                </div><button class="close-language" id="close-language" type="button" aria-label="Закрыть">×</button>
+                </div>
+                <button class="close-language" id="close-language" type="button" aria-label="Закрыть">×</button>
             </div>
-            <div class="language-tabs" role="tablist"><span class="language-tab-slider"
-                    aria-hidden="true"></span><button class="language-tab active" id="recent-tab" type="button"
-                    role="tab" aria-selected="true" aria-controls="recent-panel">Недавно</button><button
-                    class="language-tab" id="all-tab" type="button" role="tab" aria-selected="false"
-                    aria-controls="all-panel">Все языки</button></div>
-            <label class="language-search"><span aria-hidden="true">⌕</span><input id="language-search" type="search"
-                    placeholder="Найти язык..." autocomplete="off"></label>
+
+            <div class="language-tabs" role="tablist" aria-label="Списки языков">
+                <span class="language-tab-slider" aria-hidden="true"></span>
+                <button class="language-tab active" id="recent-tab" type="button" role="tab" aria-selected="true"
+                    aria-controls="recent-panel">Недавно</button>
+                <button class="language-tab" id="all-tab" type="button" role="tab" aria-selected="false"
+                    aria-controls="all-panel">Все языки</button>
+            </div>
+
+            <label class="language-search">
+                <span aria-hidden="true">⌕</span>
+                <input id="language-search" type="search" aria-label="Найти язык" placeholder="Найти язык..."
+                    autocomplete="off">
+            </label>
+
             <div class="language-pages">
                 <div class="language-track" id="language-track">
-                    <section class="language-page" id="recent-panel" role="tabpanel">
+                    <section class="language-page recent-page" id="recent-panel" role="tabpanel"
+                        aria-labelledby="recent-tab">
                         <div class="language-list" id="recent-languages"></div>
-                        <p class="no-languages" id="no-recent" hidden>Нет недавних.</p>
+                        <p class="no-languages" id="no-recent" hidden>Здесь появятся недавно выбранные языки.</p>
                     </section>
-                    <section class="language-page" id="all-panel" role="tabpanel" aria-hidden="true">
+                    <section class="language-page all-page" id="all-panel" role="tabpanel" aria-labelledby="all-tab"
+                        aria-hidden="true">
                         <div class="language-list" id="all-languages"></div>
-                        <p class="no-languages" id="no-results" hidden>Язык не найден.</p>
+                        <p class="no-languages" id="no-results" hidden>Язык не найден. Попробуй другое название.</p>
                     </section>
                 </div>
             </div>
-            <p class="language-hint">Выбор сохраняется на устройстве</p>
+            <p class="language-hint">Выбор сохраняется на этом устройстве</p>
         </section>
     </div>
+
     <script src="script.js"></script>
 </body>
 
